@@ -2,8 +2,16 @@
 
 /* https://www.w3schools.com/css/css_howto.asp */
 
+body {
+	font-family: Marlett;
+}
+
+h1 {
+	font-family: Impact;
+}
+
 table {
-font-family: arial, sans-serif;
+font-family: Brush Script MT;
 border-collapse: collapse;
 width: 100%;
 }
