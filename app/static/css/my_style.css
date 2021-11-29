@@ -3,27 +3,27 @@
 /* https://www.w3schools.com/css/css_howto.asp */
 
 body {
-	font-family: Marlett;
+	background-color: #71d982;
+	font-family: Copperplate Gothic Light;
 }
 
 h1 {
-	font-family: Impact;
+	font-family: Goudy Old Style;
 }
 
 table {
-font-family: Brush Script MT;
-border-collapse: collapse;
-width: 100%;
+	border-collapse: collapse;
+	width: 100%;
 }
 
 td, th {
-border: 1px solid #dddddd;
-text-align: left;
-padding: 8px;
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
 }
 
 tr:nth-child(even) {
-background-color: #dddddd;
+	background-color: #dddddd;
 }
 
 input {
