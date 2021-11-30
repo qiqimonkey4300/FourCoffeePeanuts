@@ -2,10 +2,10 @@
 
 /* https://www.w3schools.com/css/css_howto.asp */
 /* <!--
-  ALSO team 5G: Shyne Choi and Gavin McGinley
+  Editing team 5G: Shyne Choi & Gavin McGinley
   Soft Dev
-  K20 -- Pimp my site w/ CSS
-
+  K20 -- Add CSS to P0
+  2021-11-29
 -->*/
 body {
 	background-color: #71d982;
@@ -13,7 +13,9 @@ body {
 }
 
 h1 {
+	text-align: center;
 	font-family: Goudy Old Style;
+	text-decoration:underline;
 }
 
 table {
@@ -31,13 +33,18 @@ tr:nth-child(even) {
 	background-color: #dddddd;
 }
 
-input {
-/* float: right; */
-}
 .textbox{
-background-color: #7FFFD4;
-padding: 20px 20px 20px 20px;
-text-align:left;
-border: 1px solid black;
-width:40%;
+	background-color: #7FFFD4;
+	padding: 20px 20px 20px 20px;
+	text-align:left;
+	border: 1px solid black;
+	width:40%;
+	float:center;
+	margin:auto;
+}
+
+.tablediv {
+	padding: 10px 10px 10px 10px;
+	background-color: #FAEBD7;
+	border: 1px solid black;
 }
