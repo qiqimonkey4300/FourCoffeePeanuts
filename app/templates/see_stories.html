@@ -4,11 +4,61 @@
   SoftDev
   P00 -- Move Slowly and Fix Things
 -->
+<!--
+  ALSO team 5G: Shyne Choi and Gavin McGinley
+  Soft Dev
+  K20 -- Pimp my site w/ CSS
 
+-->
 
 <html>
 
   <head>
+    <style>
+      body {
+	background-color: #71d982;
+	font-family: Copperplate Gothic Light;
+}
+
+h1 {
+	font-family: Goudy Old Style;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid black;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+input {
+/* float: right; */
+}
+.textbox{
+background-color: #FAEBD7;
+padding: 10px 10px 10px 10px;
+text-align:left;
+border: 1px solid black;
+width:60%;
+}
+.tablediv{
+background-color: #FAEBD7;
+padding: 10px 10px 10px 10px;
+border: 1px solid black;
+}
+h1{
+text-decoration:underline;
+}
+
+    </style>
     <link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="static/css/my_style.css">
     <title>
@@ -30,10 +80,11 @@
       <input type="text" placeholder="Search.." name="search">
       <button type="submit">Submit</button>
     </form>
-
+    <br>
     <!-- storiesList is a list of tuples, make sure to have this format -->
     {% for story_info in storiesList %}
       {% if (story_info != ()) %}
+    <div class="textbox">
         <h2> Title:  {{story_info[0]}} </h2> <!-- title !-->
         <p> Preview: {{story_info[1]}} </p> <!-- preview !-->
         <!-- button to view story so that user can read latest preview and add edits in a box !-->
@@ -42,7 +93,9 @@
           <input type="hidden" name="preview"     value="{{story_info[1]}}">
           <input type="submit" value="Edit Story">
         </form>
-        <br> </br> <!-- new line separating each story !-->
+      </div>
+        <br></br> <!-- new line separating each story !-->
+
       {% endif %}
     {% endfor %}
 

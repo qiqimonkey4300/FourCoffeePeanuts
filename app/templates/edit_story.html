@@ -4,11 +4,61 @@
   SoftDev
   P00 -- Move Slowly and Fix Things
 -->
+<!--
+  ALSO team 5G: Shyne Choi and Gavin McGinley
+  Soft Dev
+  K20 -- Pimp my site w/ CSS
 
+-->
 
 <html>
 
   <head>
+    <style>
+      body {
+	background-color: #71d982;
+	font-family: Copperplate Gothic Light;
+}
+
+h1 {
+	font-family: Goudy Old Style;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid black;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+input {
+/* float: right; */
+}
+.textbox{
+background-color: #FAEBD7;
+padding: 10px 10px 10px 10px;
+text-align:left;
+border: 1px solid black;
+width:max-content;
+}
+.tablediv{
+background-color: #FAEBD7;
+padding: 10px 10px 10px 10px;
+border: 1px solid black;
+}
+h1{
+text-decoration:underline;
+}
+
+    </style>
     <link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="static/css/my_style.css">
     <title>
@@ -25,17 +75,19 @@
       <input type="submit" value="See Stories">
     </form>
     <h2>{{error}}</h2>
+    <div class="textbox">
     <h3> Latest update to the story: </h3>
     {{ story_preview }}
+
     <form action="/submit_edit_story" method="post"> <!-- should be submit_edit_story -->
       <!-- story text -->
-      <p>Story Text:<br>
+      <b><p>Story Text:<br></b>
         <textarea type="text" name="story" rows=10 cols=100 placeholder="Add your update here!"></textarea>
       </p>
       <input type="hidden" value="{{title}}" name="story_title">
       <input type="submit" value="Submit">
     </form>
-
+</div>
   </body>
 
 </html>

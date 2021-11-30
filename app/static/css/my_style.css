@@ -1,7 +1,12 @@
 /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro */
 
 /* https://www.w3schools.com/css/css_howto.asp */
+/* <!--
+  ALSO team 5G: Shyne Choi and Gavin McGinley
+  Soft Dev
+  K20 -- Pimp my site w/ CSS
 
+-->*/
 body {
 	background-color: #71d982;
 	font-family: Copperplate Gothic Light;
@@ -28,4 +33,11 @@ tr:nth-child(even) {
 
 input {
 /* float: right; */
+}
+.textbox{
+background-color: #7FFFD4;
+padding: 20px 20px 20px 20px;
+text-align:left;
+border: 1px solid black;
+width:40%;
 }

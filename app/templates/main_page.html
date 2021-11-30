@@ -4,24 +4,78 @@
   SoftDev
   P00 -- Move Slowly and Fix Things
 -->
+<!--
+  ALSO team 5G: Shyne Choi and Gavin McGinley
+  Soft Dev
+  K20 -- Pimp my site w/ CSS
 
+-->
 
 <html>
 
   <head>
+    <style>
+      body {
+	background-color: #71d982;
+	font-family: Copperplate Gothic Light;
+}
+
+h1 {
+	font-family: Goudy Old Style;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid black;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+input {
+/* float: right; */
+}
+.textbox{
+background-color: #FAEBD7;
+padding: 10px 70px 10px 70px;
+text-align:left;
+border: 1px solid black;
+width:30%;
+float:center;
+margin:auto;
+}
+.tablediv{
+background-color: #FAEBD7;
+padding: 10px 10px 10px 10px;
+border: 1px solid black;
+}
+h1{
+text-decoration:underline;
+}
+
+    </style>
     <link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="static/css/my_style.css">
+    <link rel="stylesheet" href="../static/css/my_style.css">
     <title> Main Page </title>
   </head>
 
   <body>
     <h1> Welcome to StoryBrew </h1>
+    <div class="textbox">
     <h2> Interact with other users to create the best story! <br> Create your very own story or add on to someone else's.</h2>
     <h3>
       <a href="/login">Login</a>
       or
       <a href="/create_account">Create Account</a> to begin!
     </h3>
+    </div>
   </body>
 
 </html>
